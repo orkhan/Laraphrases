@@ -1,0 +1,27 @@
+{
+    "name": "orkhan/laraphrases",
+    "description": "Inline phrase editing for Laravel apps",
+    "keywords": ["laravel", "eloquent", "phrase", "phrases", "laraphrases", "inline", "contenteditable"],
+    "authors": [
+        {
+            "name": "Orkhan Maharramli",
+            "email": "o@origami.az"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.1.*",
+        "illuminate/config": "4.1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations",
+            "src/views",
+            "src/controllers"
+        ],
+        "psr-0": {
+            "Orkhan\\Laraphrases\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

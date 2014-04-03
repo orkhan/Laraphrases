@@ -1,0 +1,314 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('fonts/icomoon.eot');
+    src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.woff') format('woff'),
+    url('fonts/icomoon.ttf') format('truetype'),
+    url('fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.laraphrase-text-options .no-overflow {
+    overflow: hidden;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/* Used by the ui bubble to stop wrapping */
+.laraphrase-text-options .lengthen {
+    display: block;
+    width: 300px;
+    height: 100%;
+}
+
+.laraphrase-text-options .useicons {
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px !important;
+    font-family: 'icomoon' !important;
+}
+
+.laraphrase-text-options .ui {
+    position: fixed;
+    padding: 20px;
+    width: 65px;
+    bottom: 0px;
+    left: 0px;
+    top: 0px;
+}
+
+.laraphrase-text-options .ui:hover button {
+    opacity: 0.4;
+}
+
+.laraphrase-text-options .ui button:hover {
+    opacity: 1;
+}
+
+.laraphrase-text-options .ui button, .laraphrase-text-options button {
+
+    -webkit-transition: opacity 400ms;
+    -moz-transition: opacity 400ms;
+    -ms-transition: opacity 400ms;
+    -o-transition: opacity 400ms;
+    transition: opacity 400ms;
+
+    font-family: inherit;
+    background: none;
+    cursor: pointer;
+    font-size: 25px;
+    color: inherit;
+    opacity: 0.1;
+    padding: 0px;
+    height: 32px;
+    width: 25px;
+    border: 0px;
+}
+
+.laraphrase-text-options .quote {
+    line-height: 60px !important;
+    font-size: 49px !important;
+}
+
+/*********************************************
+ * UI BUBBLE
+ *********************************************/
+
+.laraphrase-text-options {
+
+    -webkit-transition: opacity 250ms, margin 250ms;
+    -moz-transition: opacity 250ms, margin 250ms;
+    -ms-transition: opacity 250ms, margin 250ms;
+    -o-transition: opacity 250ms, margin 250ms;
+    transition: opacity 250ms, margin 250ms;
+
+    position: absolute;
+    left: -999px;
+    top: -999px;
+    color: #fff;
+    height: 0px;
+    width: 0px;
+    z-index: 5;
+    margin-top: 5px;
+    opacity: 0;
+}
+
+.laraphrase-text-options.fade {
+    opacity: 0;
+    margin-top: -5px;
+}
+
+.laraphrase-text-options.active {
+    opacity: 1;
+    margin-top: 0px;
+}
+
+.laraphrase-text-options .options {
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    border-radius: 5px;
+    margin-left: -63px;
+    margin-top: -46px;
+    z-index: 1000;
+    padding: 5px 4px 5px 5px;
+    width: 125px;
+    height: 40px;
+
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.laraphrase-text-options .options.url-mode {
+    width: 275px;
+    margin-left: -137px;
+}
+
+.laraphrase-text-options .options.url-mode .bold, .laraphrase-text-options .options.url-mode .italic, .laraphrase-text-options .options.url-mode .quote {
+    width: 0px;
+    overflow: hidden;
+    margin-right: 0px;
+    opacity: 0;
+}
+
+.laraphrase-text-options .options .italic {
+    font-style: italic;
+}
+
+.laraphrase-text-options .options button {
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+
+    float: left;
+    width: 28px;
+    opacity: 0.7;
+    height: 30px;
+    border-radius: 3px;
+    margin-right: 1px;
+    font-family: 'Lato', sans-serif;
+}
+
+.laraphrase-text-options .options.url-mode input{
+    border-left: 2px solid transparent;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 236px;
+}
+
+.laraphrase-text-options .options input {
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+
+    border-radius: 3px;
+    overflow: hidden;
+    outline: 0px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    float: left;
+    width: 0px;
+}
+
+.laraphrase-text-options .options button.active {
+    background-color: rgba(255,255,255,0.4);
+    opacity: 1;
+}
+
+.laraphrase-text-options .options button:hover {
+    opacity: 0.95;
+}
+
+.laraphrase-text-options .options:before {
+    content: "";
+    border-top: 5px solid rgba(0,0,0,0.9);
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    position: absolute;
+    margin-left: -5px;
+    bottom: -15px;
+    height: 5px;
+    width: 0px;
+    left: 50%;
+}
+
+.laraphrase-text-options .url {
+    -webkit-font-smoothing: antialiased;
+}
+
+.laraphrase_editable_mode_on {
+    border-bottom: 1px dashed black;
+}
+.laraphrase_editable_mode_on:focus {
+    outline: none;
+}
+.laraphrase_editable_mode_on:hover {
+    background-color: #fffadc;
+    cursor: pointer;
+}
+#laraphrase-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 220px;
+    min-height: 100px;
+    padding: 10px;
+    color: white;
+    background: #34495E;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    z-index: 99999999999999999;
+}
+#laraphrase-box.success {
+    background: #27AE60;
+}
+#laraphrase-box.error {
+    background: #E74C3C;
+}
+#laraphrase-box.busy {
+    background: #3498DB;
+}
+#laraphrase-message {
+    padding: 15px;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+}
+#laraphrase-switch {
+    padding: 0;
+    margin: 0;
+}
+.onoffswitch {
+    float: right;margin: 0 10px 0 0;
+    position: relative; width: 106px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.editmode {
+    float: left;margin: 10px 0 0 10px;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #FFFFFF; border-radius: 10px;
+}
+
+.onoffswitch-inner {
+    width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    float: left; width: 50%; height: 40px; padding: 0; line-height: 40px;
+    font-size: 16px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 24px;
+    background-color: #EEEEEE; color: #3498DB;
+}
+
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 24px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    width: 38px; margin: 1px;
+    background: #A1A1A1;
+    border: 2px solid #FFFFFF; border-radius: 10px;
+    position: absolute; top: 0; bottom: 0; right: 62px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+    background-color: #3498DB;
+}
