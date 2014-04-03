@@ -1,4 +1,4 @@
-# Laraphrases! 
+# Laraphrases!
 
 ![Laraphrases](http://www.origami-agency.com/keep-calm-and-use-laraphrases-git.png)
 
@@ -27,7 +27,7 @@ Then, add following to the list of service providers in `app/config/app.php`
 and followings to the list of aliases
 
 ```php
-'Laraphrases' => 'Orkhan\Laraphrases\Facades\Laraphrase',
+'Laraphrase' => 'Orkhan\Laraphrases\Facades\Laraphrase',
 'Phrase' => 'Orkhan\Laraphrases\Facades\Phrase',
 ```
 
