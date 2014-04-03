@@ -1,5 +1,6 @@
 # Laraphrases!
 
+[![Build Status](https://travis-ci.org/orkhan/Laraphrases.svg?branch=master)](https://travis-ci.org/orkhan/Laraphrases)
 ![Laraphrases](http://www.origami-agency.com/keep-calm-and-use-laraphrases-git.png)
 
 Laraphrases is a package for live editing phrases on websites.
