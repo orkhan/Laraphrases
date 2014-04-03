@@ -1,8 +1,6 @@
 # Laraphrases!
 
-[![Build Status](https://travis-ci.org/infinum/phrasing.png)](https://travis-ci.org/infinum/phrasing)
-
-![Laraphrases](http://www.miataturbo.net/attachments/miata-parts-sale-trade-5/74257-lots-leftovers-near-boston-archer-phrasing2-300x225-jpg?dateline=1366600534)
+![Laraphrases](http://www.origami-agency.com/keep-calm-and-use-laraphrases-git.png)
 
 Laraphrases is a package for live editing phrases on websites.
 
@@ -78,18 +76,19 @@ Aside from editing phrases (basically, Laravel translations) you can also edit m
 
   	{{ Laraphrase::get($post, 'title') }}
 
-In the above example, <tt>@post</tt> is the record with a <tt>title</tt> attribute.
+In the above example, <tt>$post</tt> is the record with a <tt>title</tt> attribute.
 
 ## Security
 
 Since Laraphrases can be used to update any attribute in any table, special care must be taken into consideration from a security standpoint.
 
-By default, Laraphrases doesn't allow updating of any attribute apart from <tt>'Post' => ['value']</tt>. To be able to work with other attributes, you need to whitelist them.
+By default, Laraphrases doesn't allow updating of any attribute apart from <tt>'Phrase' => ['value']</tt>. To be able to work with other attributes, you need to whitelist them.
 
 In the <tt>app/config/packages/orkhan/laraphrases/phrase.php</tt> file you can whitelist your model attributes like this:
 
 ```php
     'white_list' => [
+        'Phrase' => ['value'],
         'Post' => ['title', 'summary'],
     ],
 ```
