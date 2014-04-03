@@ -2,7 +2,7 @@
 
 return [
     'can_edit' => function() {
-        return true; // Your custom filter: Sentry::check() && Sentry::getUser()->hasAccess('laraphrase') ? true : false
+        return true; // Your custom filter: Sentry::check() && Sentry::getUser()->hasAccess('laraphrases') ? true : false
     },
     'is_editable_mode_on' => function() {
         return $_COOKIE['editing_mode'] === "false" ? false : true;
