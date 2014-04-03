@@ -1,4 +1,4 @@
-# Laraphrases!
+# Laraphrases! 
 
 ![Laraphrases](http://www.origami-agency.com/keep-calm-and-use-laraphrases-git.png)
 
