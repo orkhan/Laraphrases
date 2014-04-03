@@ -2,5 +2,6 @@
 
 Route::group(['prefix' => 'laraphrases'], function()
 {
-    Route::post('remote-update', ['before' => 'csrf', 'uses' => 'LaraphraseController@postRemoteUpdate']);
+    $canEdit = Config::get('laraphrases::phrase.can_edit');
+    Route::post('remote-update', ['before' => ['csrf', $canEdit()], 'uses' => 'LaraphraseController@postRemoteUpdate']);
 });
