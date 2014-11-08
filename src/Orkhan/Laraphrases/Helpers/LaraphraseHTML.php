@@ -55,7 +55,7 @@ trait LaraphraseHTML {
      */
     public static function css()
     {
-        $html = '<link href="/packages/orkhan/laraphrases/laraphrases.css" rel="stylesheet" />';
+        $html = '<link href="packages/orkhan/laraphrases/laraphrases.css" rel="stylesheet" />';
         return $html;
     }
 
@@ -66,9 +66,9 @@ trait LaraphraseHTML {
      */
     public static function js()
     {
-        $html = '<script src="/packages/orkhan/laraphrases/editor.js"></script>'.
-                '<script src="/packages/orkhan/laraphrases/jquery.cookie.js"></script>'.
-                '<script src="/packages/orkhan/laraphrases/laraphrases.js"></script>';
+        $html = '<script src="packages/orkhan/laraphrases/editor.js"></script>'.
+                '<script src="packages/orkhan/laraphrases/jquery.cookie.js"></script>'.
+                '<script src="packages/orkhan/laraphrases/laraphrases.js"></script>';
         return $html;
     }
 
