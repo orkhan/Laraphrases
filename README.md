@@ -36,7 +36,7 @@ and followings to the list of aliases
 Run the install command which will migrate database and publishes configs, views and assets.
 
 ```bash
-artisan laraphrases:install
+php artisan laraphrase:install
 ```
 
 ## Setup
